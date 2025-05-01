@@ -1,40 +1,35 @@
 # Simple-calculation.by
+
 import numpy as np
 
-Arithmetic operations 
-a=np.int("enter the value:")
-b=np.int("enter the value:")
+# Input values
+a = int(input("Enter the value: "))
+b = int(input("Enter the value: "))
 
---addition--
-add()
-(a+b)
+# --addition--
+def add():
+    return a + b
 
-break;
+# --subtraction--
+def sub():
+    return a - b
 
---subtraction--
-sub()
-(a-b)
+# --multiplication--
+def X():
+    return a * b
 
-break;
+# --division--
+def div():
+    if b == 0:
+        return "Zero can't be divisor"
+    else:
+        return a / b
 
---multiplication--
-X()
-(a*b)
+# Output all operations
+print("The value of arithmetic operation is:")
+print("Addition:", add())
+print("Subtraction:", sub())
+print("Multiplication:", X())
+print("Division:", div())
 
-break;
 
-
---division--
-div()
-if
-(
-b=o,
-
-print("zero cant be divisor")
-)
-else
-(a/b)
-
-break;
-
-print ("The value of arithmetic operation is :",add(),sub(),x(),div())
